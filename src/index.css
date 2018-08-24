@@ -1,0 +1,78 @@
+body{
+  background-color: black;
+  color: white;
+}
+.app-title{
+  font-size: 30px;
+}
+.apply{
+  text-align: center;
+  padding: 5%;
+}
+/* Profile */
+.profile{
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img{
+  margin-top: 20px;
+  width: 180px;
+  height: 180px;
+  border: 5px solid grey;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 30px;
+}
+
+.profile-followers{
+  font-size: 20px;
+}
+
+.profile-genres{
+  font-size: 20px;
+}
+
+.profile-info{
+  margin-left: 15px;
+  text-align: center;
+}
+
+/* gallery */
+.track{
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.track-img{
+  width: 200px;
+  height: 200px;
+  border: 5px solid grey;
+  object-fit: cover;
+  position: absolute;
+}
+
+.track-text{
+  background-color: black;
+  color: white;
+  opacity: 0.75;
+  align-items: center;
+  bottom: 0;
+  padding: 10px;
+  margin-left: 5px;
+  width: 190px;
+  text-align: center;
+  position: absolute;
+}
+
+.btn{
+  margin-top: 15px;
+  font-size: 20px;
+}
