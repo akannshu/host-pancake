@@ -16,7 +16,7 @@ class App extends React.Component {
   search(){
     console.log('this.state', this.state);
     const BASE_URL = 'https://api.spotify.com/v1/search?'
-    let FETCH_URL = BASE_URL + "q=" + this.state.query + "&type=artist&limit=1&access_token= Put your access token here";
+    let FETCH_URL = BASE_URL + "q=" + this.state.query + "&type=artist&limit=1&access_token=BQDLgW-L2SZ-sMY4v4yBCUVDUCnap82cHzJwAYnxB1fuE2J4IhwXDuWDbImLkV1SMu3LfC3atcXc-WvJxx7ix-tM4RyDIva3Y3EzA_o4lfGy07oNOVDPLnSrCGXibyQKUPUdKAapkGQTJPLplLFdqPhe2vdEVKLA39j2hLiyPIbkaS2pUg";
     const ALBUM_URL = 'https://api.spotify.com/v1/artists/';
     console.log('FETCH_URL', FETCH_URL);
     fetch(FETCH_URL, {
@@ -28,7 +28,7 @@ class App extends React.Component {
       console.log('artist', json);
      this.setState({artist});
 
-     FETCH_URL = `${ALBUM_URL}${artist.id}/top-tracks?country=US&access_token= Put your access token here`
+     FETCH_URL = `${ALBUM_URL}${artist.id}/top-tracks?country=US&access_token=BQDLgW-L2SZ-sMY4v4yBCUVDUCnap82cHzJwAYnxB1fuE2J4IhwXDuWDbImLkV1SMu3LfC3atcXc-WvJxx7ix-tM4RyDIva3Y3EzA_o4lfGy07oNOVDPLnSrCGXibyQKUPUdKAapkGQTJPLplLFdqPhe2vdEVKLA39j2hLiyPIbkaS2pUg`
      fetch(FETCH_URL, {
        method: 'GET'
      })
